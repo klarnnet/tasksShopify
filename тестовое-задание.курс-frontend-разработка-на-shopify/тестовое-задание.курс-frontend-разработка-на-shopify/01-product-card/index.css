@@ -1,0 +1,101 @@
+/* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
+*{
+    font-family:'Arial';
+    font-size:16px;
+}
+.main{
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 12fr;
+    grid-template-rows: 3fr 9fr;
+    align-items: center;
+    justify-items: center;
+    background: #F6F6F6;
+    padding-bottom: 40px;
+}
+.head{
+    font-size:48px;
+}
+.cards{
+    Height:482px;
+    display:grid;
+    gap:20px;
+    grid-template-columns: 4fr 4fr 4fr;
+    justify-content:center;
+}
+.card1, .card2, .card3 {
+    box-shadow: 7px 7px  30px rgba(0,0,0,0.1);
+    position: relative;
+    background:#FFFFFF;
+    border-radius:12px; 
+}
+.about{
+    margin: 24px;
+    width:332px;
+}
+.heading, .button ,.head{
+    font-weight:900;
+}
+.description{
+    line-height: 24px;
+    font-weight:400;
+}
+.heading{
+    font-size:24px;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 48px;
+    Width: 332px;
+    position: absolute;
+    bottom: 24px;
+    font-size:18px;
+    color:#42940F;
+    border: 2px solid #42940F;
+    border-radius: 8px;
+}
+.card3 .button{
+    border: 1px solid #4E4E4E;
+    color:#fff;
+    background:#4E4E4E;
+    border-radius: 8px;
+}
+img{
+    border-radius:12px 12px 0 0; 
+    max-weight:100%;
+}
+
+.card1 .button:hover, .card2 .button:hover {
+    background: #42940F;
+    color: #fff;
+    border: 2px solid #42940F
+    }
+.card1 .button:active, .card2 .button:active { 
+    background: #1F5200;
+    color: #fff;
+    border: 2px solid #1F5200;
+}
+.image  span {
+    left: 17px;
+    position: absolute;
+    top: 17px;
+    width: 100%;
+    font-family: 'Arial';
+    color: #2F2F2F;
+    display: flex;
+    line-height: 24px;
+}
+.last, .new{
+    padding: 0 16px;
+    border-radius: 8px;
+}
+.image .last {
+    margin-left: 17px;
+    background: #FFCF56;
+}
+.image .new {
+    background: #FDCFF3; 
+}
